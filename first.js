@@ -19,16 +19,16 @@ console.log("Average is: " + result);
 
 // Another function to find minimum
 
-function findMin(arr) {
+function findMax(arr) {
     let min = arr[0];   // Bug: should be arr[0]
 
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < min) {
-            min = arr[i];
+        if (arr[i] > max) {
+            max = arr[i];
         }
     }
 
-    return min;
+    return max;
 }
 
-console.log("Minimum is: " + findMin(numbers));
+console.log("Minimum is: " + findMax(numbers));
