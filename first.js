@@ -3,7 +3,7 @@
 function calculateAverage(arr) {
     let sum = 0;
 
-    for (let i = 0; i <= arr.length; i++) {   // Bug: should be < arr.length
+    for (let i = 0; i < arr.length; i++) {   // Bug: should be < arr.length
         sum += arr[i];
     }
 
@@ -20,7 +20,7 @@ console.log("Average is: " + result);
 // Another function to find minimum
 
 function findMin(arr) {
-    let min = 0;   // Bug: should be arr[0]
+    let min = arr[0];   // Bug: should be arr[0]
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] < min) {
